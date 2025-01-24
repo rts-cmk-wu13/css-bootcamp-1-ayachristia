@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* opgave 1 */
+body {
+  background-color: rgba(222, 184, 135, 0.636);
+}
+/* opgave 2 */
+.macondo-regular {
+  font-family: "Macondo", sans-serif, "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dancing-script-light {
+  font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+/* opgave 3 */
+.portrait_img {
+  max-width: 100%;
+  /* 12rem for at sætte en fast width da jeg ændrer billedets aspect */
+  max-width: 12rem;
+  /* for at billedets i dette tilfælde højde, altid skalere korrekt ift. de 12rem på en aspect af 9/16 */
+  aspect-ratio: 9/16;
+  /* for at det større billedet jeg har valgt skalere til sin aspect ratio korekt */
+  object-fit: cover;
+}
+/* opgave 4 */
+nav ul li:nth-child(4) {
+  background-color: violet;
+}
+/* opgave 5 -det kan jeg slet ikke finde ud af*/
+.socials ul {
+  display: flex;
+  /* gap: 2em; */
+}
+
+/* den eneste dårlige ting, bedre at bruge gap i ul  */
+.socials ul li {
+  margin: 0 2em 0 0;
+}
